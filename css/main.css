@@ -1,0 +1,314 @@
+.navbar {
+  background-color: orange;
+  height: 80px;
+  z-index: 1;
+}
+.navbar li {
+  font-weight: bold;
+}
+.navbar .nav-hover-grow:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s linear;
+}
+.navbar .navbar-toggler {
+  color: white;
+}
+.navbar .ul-bg-color {
+  background-color: orange;
+}
+
+.section-1 {
+  overflow-x: hidden;
+}
+
+.carousel .carousel-item h5 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.carousel .fondo-etiqueta {
+  background-color: rgba(255, 165, 0, 0.8);
+}
+
+.section-3 {
+  overflow-x: hidden;
+}
+
+.footer .logos-redes-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow-x: hidden;
+}
+@media (max-width: 450px) {
+  .footer .logos-redes-container {
+    justify-content: flex-start;
+  }
+}
+.footer .logo-instagram-link {
+  width: 10%;
+  margin-right: 20px;
+}
+.footer .logo-instagram {
+  width: 100%;
+}
+.footer .logo-whatsapp-link {
+  width: 10%;
+}
+.footer .logo-whatsapp {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina" "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
+}
+@media (min-width: 820px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina" "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
+  }
+}
+
+.h1-productos {
+  grid-area: h1-productos;
+  margin: auto;
+  margin-top: 3%;
+  font-weight: bold;
+}
+@media (min-width: 760px) {
+  .h1-productos {
+    grid-area: h1-productos;
+    margin: auto;
+    margin-top: 3%;
+    font-weight: bold;
+  }
+}
+
+.h2-cocina {
+  align-self: self-start;
+  margin-left: 10%;
+  margin-top: 5%;
+  grid-area: h2-cocina;
+}
+@media (min-width: 760px) {
+  .h2-cocina {
+    align-self: self-start;
+    margin-left: 4%;
+    margin-top: 1%;
+    grid-area: h2-cocina;
+  }
+}
+
+.container-cocina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: cocina;
+}
+@media (min-width: 760px) {
+  .container-cocina {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    grid-area: cocina;
+    justify-content: space-around;
+  }
+}
+.container-cocina .container-cocina__carta-cocina {
+  width: 80%;
+  border: 1px solid rgb(62, 60, 60);
+  margin: 30px 0;
+  border-radius: 2px;
+}
+@media (min-width: 760px) {
+  .container-cocina .container-cocina__carta-cocina {
+    width: 25%;
+  }
+}
+.container-cocina .container-cocina__img {
+  width: 100%;
+}
+.container-cocina .container-cocina__p {
+  color: white;
+}
+.container-cocina .container-cocina__info-tarjeta {
+  background-color: rgb(62, 60, 60);
+  padding: 3%;
+}
+.container-cocina .container-cocina__button {
+  padding: 2%;
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container-cocina .container-cocina__button:hover {
+  background-color: #000000;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.container-cocina .container-cocina__button:active {
+  background-color: #000000;
+  box-shadow: none;
+  transform: translateX(1px);
+}
+
+.h2-comedor {
+  align-self: self-start;
+  margin-left: 10%;
+  margin-top: 5%;
+  grid-area: h2-comedor;
+}
+@media (min-width: 760px) {
+  .h2-comedor {
+    align-self: self-start;
+    margin-left: 4%;
+    grid-area: h2-comedor;
+  }
+}
+
+.container-comedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: comedor;
+}
+@media (min-width: 760px) {
+  .container-comedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    grid-area: comedor;
+    justify-content: space-around;
+  }
+}
+.container-comedor .container-comedor__carta-comedor {
+  width: 80%;
+  border: 1px solid rgb(62, 60, 60);
+  margin: 30px 0;
+  border-radius: 2px;
+}
+@media (min-width: 760px) {
+  .container-comedor .container-comedor__carta-comedor {
+    width: 25%;
+  }
+}
+.container-comedor .container-comedor__img {
+  width: 100%;
+}
+.container-comedor .container-comedor__p {
+  color: white;
+}
+.container-comedor .container-comedor__info-tarjeta {
+  background-color: rgb(62, 60, 60);
+  padding: 3%;
+}
+.container-comedor .container-comedor__button {
+  padding: 2%;
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container-comedor .container-comedor__button:hover {
+  background-color: #000000;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.container-comedor .container-comedor__button:active {
+  background-color: #000000;
+  box-shadow: none;
+  transform: translateX(1px);
+}
+
+.h2-dormitorio {
+  align-self: self-start;
+  margin-left: 10%;
+  margin-top: 5%;
+  grid-area: h2-dormitorio;
+}
+
+@media (min-width: 760px) {
+  .h2-dormitorio {
+    align-self: self-start;
+    margin-left: 4%;
+    grid-area: h2-dormitorio;
+  }
+}
+.container-dormitorio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: dormitorio;
+}
+@media (min-width: 760px) {
+  .container-dormitorio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    grid-area: dormitorio;
+    justify-content: space-around;
+  }
+}
+.container-dormitorio .container-dormitorio__carta-dormitorio {
+  width: 80%;
+  border: 1px solid rgb(62, 60, 60);
+  margin: 30px 0;
+  border-radius: 2px;
+}
+@media (min-width: 760px) {
+  .container-dormitorio .container-dormitorio__carta-dormitorio {
+    width: 25%;
+  }
+}
+.container-dormitorio .container-dormitorio__img {
+  width: 100%;
+}
+.container-dormitorio .container-dormitorio__p {
+  color: white;
+}
+.container-dormitorio .container-dormitorio__info-tarjeta {
+  background-color: rgb(62, 60, 60);
+  padding: 3%;
+}
+.container-dormitorio .container-dormitorio__button {
+  padding: 2%;
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container-dormitorio .container-dormitorio__button:hover {
+  background-color: #000000;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.container-dormitorio .container-dormitorio__button:active {
+  background-color: #000000;
+  box-shadow: none;
+  transform: translateX(1px);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */

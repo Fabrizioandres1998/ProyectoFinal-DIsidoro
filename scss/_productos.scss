@@ -1,0 +1,179 @@
+@import "mixins";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina"  "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
+    
+    @media (min-width: 820px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:  "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina"  "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
+    }
+}
+
+.h1-productos {
+    grid-area: h1-productos;
+    margin: auto;
+    margin-top: 3%;
+    font-weight: bold;
+
+    @media (min-width: 760px) {
+        grid-area: h1-productos;
+        margin: auto;
+        margin-top: 3%;
+        font-weight: bold;
+    }
+}
+
+.h2-cocina {
+    align-self: self-start;
+    margin-left: 10%;
+    margin-top: 5%;
+    grid-area: h2-cocina;
+
+    @media (min-width: 760px) {
+        align-self: self-start;
+        margin-left: 4%;
+        margin-top: 1%;
+        grid-area: h2-cocina;
+    }
+}
+
+.container-cocina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: cocina;
+
+    @media (min-width: 760px) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        grid-area: cocina;
+        justify-content: space-around;
+    }
+    
+    .container-cocina__carta-cocina {
+        @include estilo-carta;
+        }
+            .container-cocina__img {
+                @include estilo-imagen-carta
+            }
+            
+            .container-cocina__p {
+                @include estilo-p-carta
+            }
+            
+            .container-cocina__info-tarjeta {
+                @include estilo-info-carta
+            }
+            
+                .container-cocina__button{
+                    @include estilo-boton;
+                }
+    }
+
+.h2-comedor {
+    align-self: self-start;
+    margin-left: 10%;
+    margin-top: 5%;
+    grid-area: h2-comedor;
+    
+    @media (min-width: 760px) {
+        align-self: self-start;
+        margin-left: 4%;
+        grid-area: h2-comedor;
+    }
+}
+    
+.container-comedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: comedor;
+
+    @media (min-width: 760px) {   
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        grid-area: comedor;
+        justify-content: space-around;
+    }
+
+    .container-comedor__carta-comedor {
+        @include estilo-carta;
+        }
+    
+            .container-comedor__img {
+                @include estilo-imagen-carta
+            }
+            
+            .container-comedor__p {
+            @include estilo-p-carta;
+            }
+            
+            .container-comedor__info-tarjeta {
+                @include estilo-info-carta;
+            }
+            
+            .container-comedor__button {
+            @include estilo-boton;
+            }
+            
+}
+
+.h2-dormitorio {
+    align-self: self-start;
+    margin-left: 10%;
+    margin-top: 5%;
+    grid-area: h2-dormitorio;
+} 
+
+    @media (min-width: 760px) {
+        .h2-dormitorio {
+            align-self: self-start;
+            margin-left: 4%;
+            grid-area: h2-dormitorio;
+    }
+}
+
+.container-dormitorio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: dormitorio;
+
+    @media (min-width: 760px) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        grid-area: dormitorio;
+        justify-content: space-around; 
+    }
+
+    .container-dormitorio__carta-dormitorio {
+        @include estilo-carta;
+    }
+    
+        .container-dormitorio__img {
+            @include estilo-imagen-carta
+        }
+        
+        .container-dormitorio__p {
+        @include estilo-p-carta
+        }
+        
+        .container-dormitorio__info-tarjeta {
+            @include estilo-info-carta
+        }
+        
+        .container-dormitorio__button{
+            @include estilo-boton
+        }    
+}
+
+
+
