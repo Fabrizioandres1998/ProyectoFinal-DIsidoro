@@ -2,7 +2,8 @@
     background-color: orange;
     height: 80px;
     z-index: 1;
-    li {
+    
+    .nav-hover-grow {
         font-weight: bold;
     }
     .nav-hover-grow:hover {
@@ -16,6 +17,5 @@
         background-color: orange;
     } 
 }
-
 
 

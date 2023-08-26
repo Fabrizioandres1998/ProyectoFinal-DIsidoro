@@ -3,7 +3,7 @@
   height: 80px;
   z-index: 1;
 }
-.navbar li {
+.navbar .nav-hover-grow {
   font-weight: bold;
 }
 .navbar .nav-hover-grow:hover {
