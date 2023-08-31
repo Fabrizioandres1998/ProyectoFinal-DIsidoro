@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   background-color: orange;
   height: 80px;
@@ -33,11 +34,14 @@
   overflow-x: hidden;
 }
 
+.footer {
+  overflow-x: hidden;
+  margin-top: auto;
+}
 .footer .logos-redes-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  overflow-x: hidden;
 }
 @media (max-width: 450px) {
   .footer .logos-redes-container {
@@ -58,14 +62,14 @@
   width: 100%;
 }
 
-.grid-container {
+.grid-container-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina" "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
 }
 @media (min-width: 820px) {
-  .grid-container {
+  .grid-container-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -74,17 +78,21 @@
 }
 
 .h1-productos {
-  grid-area: h1-productos;
   margin: auto;
   margin-top: 3%;
   font-weight: bold;
+  grid-area: h1-productos;
 }
-@media (min-width: 760px) {
+@media (min-width: 820px) {
   .h1-productos {
-    grid-area: h1-productos;
     margin: auto;
     margin-top: 3%;
     font-weight: bold;
+  }
+}
+@media (min-width: 820px) {
+  .h1-productos {
+    grid-area: h1-productos;
   }
 }
 
@@ -297,6 +305,68 @@
   background-color: #000000;
   box-shadow: none;
   transform: translateX(1px);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.grid-container-sucursales {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titulo titulo" "direcciones direcciones" "map map";
+  overflow: hidden;
+}
+@media (min-width: 820px) {
+  .grid-container-sucursales {
+    grid-template-areas: "titulo titulo" "map direcciones";
+  }
+}
+.grid-container-sucursales .h1-sucursales {
+  margin: auto;
+  margin-top: 3%;
+  font-weight: bold;
+  grid-area: titulo;
+  padding-bottom: 4%;
+}
+@media (min-width: 820px) {
+  .grid-container-sucursales .h1-sucursales {
+    margin: auto;
+    margin-top: 3%;
+    font-weight: bold;
+  }
+}
+.grid-container-sucursales .map-container {
+  width: 90vw;
+  display: flex;
+}
+@media (min-width: 820px) {
+  .grid-container-sucursales .map-container {
+    width: 100%;
+  }
+}
+.grid-container-sucursales .map {
+  margin-left: 10%;
+  margin-bottom: 10%;
+  padding-top: 10%;
+}
+@media (min-width: 820px) {
+  .grid-container-sucursales .map {
+    height: 350px;
+    padding-top: 0;
+  }
+}
+.grid-container-sucursales .direcciones-container {
+  grid-area: direcciones;
+  list-style-type: "📌";
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.grid-container-sucursales .direcciones-container__li-2, .grid-container-sucursales .direcciones-container__li-3 {
+  padding-top: 40px;
 }
 
 * {

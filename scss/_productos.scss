@@ -1,6 +1,6 @@
 @import "mixins";
 
-.grid-container {
+.grid-container-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -15,16 +15,11 @@
 }
 
 .h1-productos {
+    @include estilo-h1;
     grid-area: h1-productos;
-    margin: auto;
-    margin-top: 3%;
-    font-weight: bold;
-
-    @media (min-width: 760px) {
+    
+    @media (min-width: 820px){
         grid-area: h1-productos;
-        margin: auto;
-        margin-top: 3%;
-        font-weight: bold;
     }
 }
 

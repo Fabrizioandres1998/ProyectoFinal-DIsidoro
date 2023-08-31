@@ -1,0 +1,58 @@
+@import "mixins";
+
+ body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+ }
+
+.grid-container-sucursales {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "titulo titulo" "direcciones direcciones" "map map";
+    overflow: hidden;
+
+    @media (min-width: 820px){
+        grid-template-areas: "titulo titulo" "map direcciones";
+    }
+
+    .h1-sucursales {
+        @include estilo-h1;
+        grid-area: titulo;
+        padding-bottom: 4%;
+    }
+
+    .map-container {
+        width: 90vw;
+        display: flex;
+
+        @media (min-width: 820px) {
+            width: 100%;
+        }
+    }
+
+        .map {
+            margin-left: 10%;
+            margin-bottom: 10%;
+            padding-top: 10%;
+
+            @media (min-width: 820px) {
+                height: 350px;
+                padding-top: 0;
+                
+            }
+        }
+    
+    .direcciones-container {
+        grid-area: direcciones;
+        list-style-type: "📌";
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .direcciones-container__li-2, .direcciones-container__li-3 {
+        padding-top: 40px;
+        }
+    
+}
+
