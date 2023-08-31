@@ -1,0 +1,9 @@
+@import "mixins";
+
+.boton-contacto {
+    @include estilo-boton;
+}
+
+.textarea-consulta {
+    resize: none;
+}
