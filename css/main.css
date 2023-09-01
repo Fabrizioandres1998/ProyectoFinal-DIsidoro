@@ -369,6 +369,10 @@ body {
   padding-top: 40px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .boton-contacto {
   padding: 2%;
   color: white;
