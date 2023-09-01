@@ -43,7 +43,7 @@
     </nav>
     <!-- navbar -->
     <form class="container d-flex justify-content-center mt-5 mb-5">
-        <div class="form-row w-100">
+        <div class="form-row w-100" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
             <div class="w-100">
                 <div class="form-group col-sm-12 col-lg-6 input-contacto">
                     <label for="nombre">Nombre</label>
@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <div class="col-lg-6 col-sm-12 d-none d-md-block">
+        <div class="col-lg-6 col-sm-12 d-none d-md-block" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
             <img src="../assets/hombres-trabajando-cortar-tablero-mdf-compressed.jpg" class="img-fluid w-100">
         </div>
     </form>
@@ -104,6 +104,11 @@
     </footer>
     <!-- footer -->
     <script src="../js/bootstrap.min.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 </body>
 </html>
