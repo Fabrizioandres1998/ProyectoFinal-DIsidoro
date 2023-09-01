@@ -391,6 +391,13 @@ body {
 
 .textarea-consulta {
   resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 820px) {
+  .input-contacto {
+    width: 75%;
+  }
 }
 
 * {

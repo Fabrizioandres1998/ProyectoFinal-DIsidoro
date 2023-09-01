@@ -6,4 +6,11 @@
 
 .textarea-consulta {
     resize: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.input-contacto {
+    @media (min-width: 820px) {
+        width: 75%
+    }
 }
