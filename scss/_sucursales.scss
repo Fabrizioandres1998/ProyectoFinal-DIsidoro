@@ -1,10 +1,10 @@
 @import "mixins";
 
- body {
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh
- }
+}
 
 .grid-container-sucursales {
     display: grid; 

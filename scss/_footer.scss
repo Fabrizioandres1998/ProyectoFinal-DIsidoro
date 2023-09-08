@@ -6,7 +6,6 @@
         justify-content: flex-end;
         align-items: center;
         
-
         @media (max-width: 450px) {
             justify-content: flex-start;
         }
@@ -14,16 +13,17 @@
         .logo-instagram-link {
             width: 10%;
             margin-right: 20px;
-        }    
+
             .logo-instagram {
                 width: 100%;
             }
-        .logo-whatsapp-link {
+            .logo-whatsapp-link {
             width: 10%;
          }
             .logo-whatsapp {
                 width: 100%;
             }
+        }         
 }
 
  

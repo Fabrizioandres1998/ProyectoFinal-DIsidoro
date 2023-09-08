@@ -5,11 +5,13 @@
     
     .nav-hover-grow {
         font-weight: bold;
+
+        &:hover {
+            transform:scale(1.1);
+            transition: transform 0.3s linear; 
+        }
     }
-    .nav-hover-grow:hover {
-        transform:scale(1.1);
-        transition: transform 0.3s linear; 
-    }
+   
     .navbar-toggler {
         color: white; 
     }

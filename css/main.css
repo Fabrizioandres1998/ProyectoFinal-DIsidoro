@@ -52,13 +52,13 @@
   width: 10%;
   margin-right: 20px;
 }
-.footer .logo-instagram {
+.footer .logo-instagram-link .logo-instagram {
   width: 100%;
 }
-.footer .logo-whatsapp-link {
+.footer .logo-instagram-link .logo-whatsapp-link {
   width: 10%;
 }
-.footer .logo-whatsapp {
+.footer .logo-instagram-link .logo-whatsapp {
   width: 100%;
 }
 
@@ -76,38 +76,35 @@
     grid-template-areas: "h1-productos h1-productos h1-productos" "h2-cocina h2-cocina h2-cocina" "cocina cocina cocina" "h2-comedor h2-comedor h2-comedor" "comedor comedor comedor" "h2-dormitorio h2-dormitorio h2-dormitorio" "dormitorio dormitorio dormitorio";
   }
 }
-
-.h1-productos {
+.grid-container-productos .h1-productos {
   margin: auto;
   margin-top: 3%;
   font-weight: bold;
   grid-area: h1-productos;
 }
 @media (min-width: 820px) {
-  .h1-productos {
+  .grid-container-productos .h1-productos {
     margin: auto;
     margin-top: 3%;
     font-weight: bold;
   }
 }
 @media (min-width: 820px) {
-  .h1-productos {
+  .grid-container-productos .h1-productos {
     grid-area: h1-productos;
   }
 }
-
-.h2-cocina {
+.grid-container-productos .h2-cocina {
   align-self: self-start;
   margin-left: 10%;
   margin-top: 5%;
   grid-area: h2-cocina;
 }
 @media (min-width: 760px) {
-  .h2-cocina {
+  .grid-container-productos .h2-cocina {
     align-self: self-start;
     margin-left: 4%;
     margin-top: 1%;
-    grid-area: h2-cocina;
   }
 }
 
@@ -122,32 +119,32 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    grid-area: cocina;
     justify-content: space-around;
   }
 }
-.container-cocina .container-cocina__carta-cocina {
+
+.container-cocina__carta-cocina {
   width: 80%;
   border: 1px solid rgb(62, 60, 60);
   margin: 30px 0;
   border-radius: 2px;
 }
 @media (min-width: 760px) {
-  .container-cocina .container-cocina__carta-cocina {
+  .container-cocina__carta-cocina {
     width: 25%;
   }
 }
-.container-cocina .container-cocina__img {
+.container-cocina__carta-cocina .container-cocina__img {
   width: 100%;
 }
-.container-cocina .container-cocina__p {
+.container-cocina__carta-cocina .container-cocina__p {
   color: white;
 }
-.container-cocina .container-cocina__info-tarjeta {
+.container-cocina__carta-cocina .container-cocina__info-tarjeta {
   background-color: rgb(62, 60, 60);
   padding: 3%;
 }
-.container-cocina .container-cocina__button {
+.container-cocina__carta-cocina .container-cocina__button {
   padding: 2%;
   color: white;
   background-color: orange;
@@ -157,11 +154,11 @@
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-.container-cocina .container-cocina__button:hover {
+.container-cocina__carta-cocina .container-cocina__button:hover {
   background-color: #000000;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
-.container-cocina .container-cocina__button:active {
+.container-cocina__carta-cocina .container-cocina__button:active {
   background-color: #000000;
   box-shadow: none;
   transform: translateX(1px);
@@ -177,7 +174,7 @@
   .h2-comedor {
     align-self: self-start;
     margin-left: 4%;
-    grid-area: h2-comedor;
+    margin-top: 1%;
   }
 }
 
@@ -192,32 +189,32 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    grid-area: comedor;
     justify-content: space-around;
   }
 }
-.container-comedor .container-comedor__carta-comedor {
+
+.container-comedor__carta-comedor {
   width: 80%;
   border: 1px solid rgb(62, 60, 60);
   margin: 30px 0;
   border-radius: 2px;
 }
 @media (min-width: 760px) {
-  .container-comedor .container-comedor__carta-comedor {
+  .container-comedor__carta-comedor {
     width: 25%;
   }
 }
-.container-comedor .container-comedor__img {
+.container-comedor__carta-comedor .container-comedor__img {
   width: 100%;
 }
-.container-comedor .container-comedor__p {
+.container-comedor__carta-comedor .container-comedor__p {
   color: white;
 }
-.container-comedor .container-comedor__info-tarjeta {
+.container-comedor__carta-comedor .container-comedor__info-tarjeta {
   background-color: rgb(62, 60, 60);
   padding: 3%;
 }
-.container-comedor .container-comedor__button {
+.container-comedor__carta-comedor .container-comedor__button {
   padding: 2%;
   color: white;
   background-color: orange;
@@ -227,11 +224,11 @@
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-.container-comedor .container-comedor__button:hover {
+.container-comedor__carta-comedor .container-comedor__button:hover {
   background-color: #000000;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
-.container-comedor .container-comedor__button:active {
+.container-comedor__carta-comedor .container-comedor__button:active {
   background-color: #000000;
   box-shadow: none;
   transform: translateX(1px);
@@ -243,14 +240,14 @@
   margin-top: 5%;
   grid-area: h2-dormitorio;
 }
-
 @media (min-width: 760px) {
   .h2-dormitorio {
     align-self: self-start;
     margin-left: 4%;
-    grid-area: h2-dormitorio;
+    margin-top: 1%;
   }
 }
+
 .container-dormitorio {
   display: flex;
   flex-direction: column;
@@ -262,32 +259,32 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    grid-area: dormitorio;
     justify-content: space-around;
   }
 }
-.container-dormitorio .container-dormitorio__carta-dormitorio {
+
+.container-dormitorio__carta-dormitorio {
   width: 80%;
   border: 1px solid rgb(62, 60, 60);
   margin: 30px 0;
   border-radius: 2px;
 }
 @media (min-width: 760px) {
-  .container-dormitorio .container-dormitorio__carta-dormitorio {
+  .container-dormitorio__carta-dormitorio {
     width: 25%;
   }
 }
-.container-dormitorio .container-dormitorio__img {
+.container-dormitorio__carta-dormitorio .container-dormitorio__img {
   width: 100%;
 }
-.container-dormitorio .container-dormitorio__p {
+.container-dormitorio__carta-dormitorio .container-dormitorio__p {
   color: white;
 }
-.container-dormitorio .container-dormitorio__info-tarjeta {
+.container-dormitorio__carta-dormitorio .container-dormitorio__info-tarjeta {
   background-color: rgb(62, 60, 60);
   padding: 3%;
 }
-.container-dormitorio .container-dormitorio__button {
+.container-dormitorio__carta-dormitorio .container-dormitorio__button {
   padding: 2%;
   color: white;
   background-color: orange;
@@ -297,11 +294,11 @@
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-.container-dormitorio .container-dormitorio__button:hover {
+.container-dormitorio__carta-dormitorio .container-dormitorio__button:hover {
   background-color: #000000;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
-.container-dormitorio .container-dormitorio__button:active {
+.container-dormitorio__carta-dormitorio .container-dormitorio__button:active {
   background-color: #000000;
   box-shadow: none;
   transform: translateX(1px);
@@ -410,6 +407,14 @@ h1 {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+}
+* p {
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  * p {
+    font-size: 20px;
+  }
 }
 
 h1 {
