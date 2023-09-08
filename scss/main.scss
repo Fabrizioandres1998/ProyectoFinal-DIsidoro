@@ -4,6 +4,7 @@
 @import "productos";
 @import "sucursales";
 @import "contacto";
+@import "variables";
 
 * {
     padding: 0;
@@ -20,6 +21,7 @@
         }
     }
 }
+
 h1 {
     font-weight: bold;
 }
